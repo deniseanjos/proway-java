@@ -8,17 +8,17 @@ public class atividade1_cadastro {
 
         Scanner scanner = new Scanner(System.in);
 
-        String usuario, produto, categoria;
+        String descricao, produto, categoria;
         double valor;
 
         System.out.println("====== CADASTRO DE PRODUTOS ======\n");
         System.out.println("Seja bem vinde! Realize o cadastro informando os dados abaixo.\n");
 
-        System.out.printf("Informe o nome do usuário: ");
-        usuario = scanner.next();
+        System.out.printf("Informe o nome do produto: ");
+        produto = scanner.next();
 
         System.out.printf("Informe a descrição do produto: ");
-        produto = scanner.next();
+        descricao = scanner.next();
 
         System.out.printf("Informe a categoria do produto: ");
         categoria = scanner.next();
@@ -28,8 +28,8 @@ public class atividade1_cadastro {
 
         System.out.println("\n====== PRODUTO CADASTRADO ======\n");
 
-        System.out.println("USUÁRIO\tPRODUTO\tCATEGORIA\tVALOR\n");
-        System.out.printf("%s\t%s\t%s\t\t%.2f\t", usuario, produto, categoria, valor);
+        System.out.println("PRODUTO\t\tDESCRICAO\t\tCATEGORIA\t\tVALOR\n");
+        System.out.printf("%s\t\t%s\t\t%s\t\t%.2f", produto, descricao, categoria, valor);
 
     }
 
