@@ -8,15 +8,16 @@ public class atividade3_switchCase {
 
         System.out.print("=== CADASTRO DE FILMES, SERIES E DOCUMENTARIOS ====\nEscolha de acordo com menu para cadastro:\n1 - FILME\t|\t2 - SÉRIE\t|\t3 - DOCUMENTARIO\nDigite aqui: ");
         int menu = sc.nextInt();
+        sc.nextLine();
 
         switch (menu){
             case 1:
                 System.out.print("Informe o nome do filme: ");
-                String nomeFilme = sc.next();
+                String nomeFilme = sc.nextLine();
                 System.out.print("Informe a descrição do filme: ");
-                String descricaoFilme = sc.next();
+                String descricaoFilme = sc.nextLine();
                 System.out.print("Informe o genero do filme: ");
-                String generoFime = sc.next();
+                String generoFime = sc.nextLine();
                 System.out.print("Informe o ano de lançamento do filme: ");
                 int anoFilme = sc.nextInt();
 
@@ -28,9 +29,9 @@ public class atividade3_switchCase {
                 break;
             case 2:
                 System.out.print("Informe o nome da serie: ");
-                String nomeSerie = sc.next();
+                String nomeSerie = sc.nextLine();
                 System.out.print("Informe a produtora da serie: ");
-                String produtoraSerie = sc.next();
+                String produtoraSerie = sc.nextLine();
                 System.out.print("Informe o ano de lançamento da serie: ");
                 int anoSerie = sc.nextInt();
 
@@ -41,9 +42,9 @@ public class atividade3_switchCase {
                 break;
             case 3:
                 System.out.print("Informe o nome do documentario: ");
-                String nomeDocumentario = sc.next();
+                String nomeDocumentario = sc.nextLine();
                 System.out.print("Informe o tema do documentario: ");
-                String temaDocumentario = sc.next();
+                String temaDocumentario = sc.nextLine();
                 System.out.print("Informe o ano de lançamento do documentario: ");
                 int anoDocumentario = sc.nextInt();
 
