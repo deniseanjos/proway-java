@@ -14,7 +14,8 @@ public class atividade4_while {
         boolean invalido = true;
 
         System.out.print("==== CADASTRO DE CLIENTES ====\n" +
-                "Seja bem vinde! Escolha uma das opções\n" +
+                "Seja bem vinde! ");
+        System.out.print("Escolha uma das opções\n" +
                 "1 - CADASTRO\t|\t2 - LISTAR \t|\t3 - SAIR" +
                 "\nOpção escolhida: ");
 
@@ -88,8 +89,7 @@ public class atividade4_while {
                     System.out.print("\nEscolha uma das opções para continuar: \n" +
                             "1 - CADASTRO\t|\t2 - LISTAR \t|\t3 - SAIR" +
                             "\nOpção escolhida: ");
-                    opcao = sc.nextInt();
-                    sc.nextLine();
+
                     break;
                 case 2:
 
@@ -98,7 +98,7 @@ public class atividade4_while {
                         System.out.print("\nEscolha uma das opções para continuar: \n" +
                                 "1 - CADASTRO\t|\t2 - LISTAR \t|\t3 - SAIR" +
                                 "\nOpção escolhida: ");
-                        opcao = sc.nextInt();
+
                     } else {
                         System.out.printf("=== CLIENTES CADASTRADOS ===\n" +
                                 "NOME COMPLETO: %s %s\n" +
@@ -108,8 +108,6 @@ public class atividade4_while {
                         System.out.print("\nEscolha uma das opções para continuar: \n" +
                                 "1 - CADASTRO\t|\t2 - LISTAR \t|\t3 - SAIR" +
                                 "\nOpção escolhida: ");
-                        opcao = sc.nextInt();
-                        sc.nextLine();
                     }
 
                     break;
@@ -118,7 +116,9 @@ public class atividade4_while {
                     break;
             }
 
-        } while (opcao == 2 || opcao == 1);
+        } while (opcao != 3);
+
+        System.out.println("Sistema finalizado.");
 
     }
 
