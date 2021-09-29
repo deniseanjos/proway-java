@@ -18,6 +18,10 @@ public class Principal {
 
         imprime_pessoa(p1);
         imprime_pessoa(p2);
+
+        p1.imprimir();
+        p2.imprimir();        
+
     }
 
     static void imprime_pessoa(Pessoa p){
