@@ -13,7 +13,15 @@ public class Principal {
         p2.sobrenome = "Sobrenome da Pessoa2";
         p2.idade = 29;
 
-        System.out.printf("Nome completo: %s %s | Idade: %d\n", p1.nome, p1.sobrenome, p1.idade);
-        System.out.printf("Nome completo: %s %s | Idade: %d\n", p2.nome, p2.sobrenome, p2.idade);
+        System.out.printf("Nome completo P1: %s %s | Idade: %d\n", p1.nome, p1.sobrenome, p1.idade);
+        System.out.printf("Nome completo P2: %s %s | Idade: %d\n", p2.nome, p2.sobrenome, p2.idade);
+
+        imprime_pessoa(p1);
+        imprime_pessoa(p2);
     }
+
+    static void imprime_pessoa(Pessoa p){
+        System.out.printf("Nome completo: %s %s | Idade: %d\n", p.nome, p.sobrenome, p.idade);
+    }
+
 }
