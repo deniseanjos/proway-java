@@ -1,3 +1,5 @@
+package atividadesdiversas;
+
 import java.util.Scanner;
 
 public class atividade2_maiorIdade {

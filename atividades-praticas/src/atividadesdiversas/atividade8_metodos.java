@@ -1,3 +1,4 @@
+package atividadesdiversas;
 import java.util.Scanner;
 
 public class atividade8_metodos {
