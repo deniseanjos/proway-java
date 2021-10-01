@@ -6,9 +6,11 @@ public class Principal {
 
         CalculadoraTaxas c1 = new CalculadoraTaxas();
 
-        double taxaTransferencia = c1.taxa_transferencia(1500);
+        double taxaTransferencia = c1.taxa_transferencia(1000);
+        double taxaTransferencia2 = c1.taxa_transferencia(500);
         
-        System.out.printf("%.4f", taxaTransferencia);
+        System.out.printf("Transf1: %.4f\n", taxaTransferencia);
+        System.out.printf("Transf2: %.4f\n", taxaTransferencia2);
 
         double saque1 = c1.taxa_saque();
         double saque2 = c1.taxa_saque();
@@ -33,5 +35,6 @@ public class Principal {
         System.out.println(saque9);
         System.out.println(saque10);
         System.out.println(saque11);
+
     }
 }
