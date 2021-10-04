@@ -6,10 +6,11 @@ public class InformacoesExternas {
     static Calculadora calcImpostos = new Calculadora();
 
     public static void main(String[] args) {
-        char continua = 'N';
 
         menu();
-        escolha_menu();
+        int op = escolha_menu();
+        opcao_escolhida(op);
+
     }
 
     static void menu() {
@@ -36,12 +37,18 @@ public class InformacoesExternas {
         switch (op) {
             case 1:
                 System.out.println("=============== CALCULO ISS ===============");
+                double resultIss = calcIss();
+                System.out.printf("O resultado do calculo de ISS foi de %.2f", resultIss);
                 break;
             case 2:
                 System.out.println("=============== CALCULO IOF ===============");
+                double resultIof = calcIof();
+                System.out.printf("O resultado do calculo de IOF foi de %.2f", resultIof);
                 break;
             case 3:
                 System.out.println("=============== CALCULO IR ================");
+                double resultIr = calcIr();
+                System.out.printf("O resultado do calculo de IR foi de %.2f", resultIr);
                 break;
         }
     }
