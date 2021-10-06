@@ -6,8 +6,6 @@ public class ContaCorrente extends Conta {
     private double taxaManutencao = 2.50;
     private int numTransferencia = 0;
 
-
-
     @Override
     public void transferencia(double valor){
         super.transferencia(valor);
@@ -20,4 +18,5 @@ public class ContaCorrente extends Conta {
             this.setSaldo(novoSaldo);
         }
     }
+
 }
