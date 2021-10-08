@@ -1,5 +1,3 @@
-import java.util.concurrent.ConcurrentHashMap;
-
 public class ContaCorrente extends Conta {
 
     private double taxaTransferecia = 10.50;
