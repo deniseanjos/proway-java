@@ -1,5 +1,3 @@
-import java.lang.reflect.Constructor;
-
 public class Aluno {
     
     private String nomeCompleto;
@@ -29,4 +27,12 @@ public class Aluno {
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
+
+
+    @Override
+    public String toString() {
+        String retorno = "\n-----------------------\n\nNOME COMPLETO: " + this.nomeCompleto + "\nIDADE: " + this.idade + "\nMATRICULA: " + this.matricula;
+        return retorno;
+    }
+
 }
