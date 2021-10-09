@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "exerc2",
         "exerc1",
-        "exerc2"
+        "exerc3"
     ]
 }
