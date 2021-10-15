@@ -6,12 +6,12 @@ public class LivroController {
 
     // CREATE
     public void salvar(Livro l) {
-        listaLivros.add(l);
+        this.listaLivros.add(l);
     }
 
     // READ
     public ArrayList<Livro> listar() {
-        return listaLivros;
+        return this.listaLivros;
     }
 
     // UPDATE
@@ -24,7 +24,7 @@ public class LivroController {
 
     // DELETE
     public void deletar(Livro l) {
-        listaLivros.remove(l);
+        this.listaLivros.remove(l);
     }
 
 }
