@@ -4,8 +4,19 @@ public class Livro extends BaseModel {
     private int qtdPaginas;
     private String editora;
 
-    public Livro(String nome, String autor){
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+    
+    public void setAutor(String autor) {
         this.autor = autor;
     }
 
@@ -28,7 +39,7 @@ public class Livro extends BaseModel {
     @Override
     public boolean equals(Object obj) {
         Livro livro = (Livro)obj;
-        if(this.id == livro.id){
+        if(this.getId() == livro.getId()){
             return true;
         } else {
             return false;

@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class LivroController {
 
-    private List<Livro> listaLivros = new ArrayList<Livro>();
+    private ArrayList<Livro> listaLivros = new ArrayList<Livro>();
 
     // CREATE
     public void salvar(Livro l) {
@@ -18,7 +17,7 @@ public class LivroController {
     // UPDATE
     public void alterar(Livro l) {
         if (listaLivros.contains(l)) {
-            deletar(livro);
+            deletar(l);
             salvar(l);
         }
     }
