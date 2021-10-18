@@ -25,7 +25,7 @@ public class Principal {
 
         // Testando impressão diretamente pelo override sem criação de função na Main
         // String teste = c2.toString();
-        // System.out.println(c2.toString());
+        // System.out.println(c2); -- Não é necessário chamar o método toString
 
     }
 
