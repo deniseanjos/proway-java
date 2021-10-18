@@ -12,11 +12,9 @@ public class Principal {
         c1.capacidadePortaMalas = 200.00;
 
         Object objV = v1;
-
         imprimir(objV);
 
         Object objC = c1;
-
         imprimir(objC);
 
         Veiculo v2 = (Veiculo)objV;
@@ -24,6 +22,10 @@ public class Principal {
 
         Carro c2 = (Carro)objC;
         imprimir(c2);
+
+        // Testando impressão diretamente pelo override sem criação de função na Main
+        // String teste = c2.toString();
+        // System.out.println(c2.toString());
 
     }
 
