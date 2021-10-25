@@ -1,3 +1,4 @@
+package resolucao1;
 import java.util.Scanner;
 
 public class Calculadora {
@@ -33,7 +34,7 @@ public class Calculadora {
             System.out.println("===== DIVIDIR ====");
             resultado = dividir(num1, num2);
             //retorno_resultado("DIVISÃO", resultado);
-            if (resultado == 0) {
+            if (resultado == -10) {
                 System.out.println("Erro na divisão.");
             } else {
                 retorno_resultado("DIVISÃO", resultado);
@@ -107,7 +108,7 @@ public class Calculadora {
             calculo = a / b;
         } catch (ArithmeticException e) {
             System.out.printf("Error: %s. Não é possível dividir por 0.\n", e.getMessage());
-            calculo = 0;
+            calculo = -10;
         }
         return calculo;
     }
