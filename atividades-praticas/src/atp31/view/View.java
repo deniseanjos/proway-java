@@ -16,13 +16,18 @@ public class View {
         CategoriaController cController = new CategoriaController();
 
         char continua;
+        int op;
 
         do {
 
             visualizar_menu_principal();
-            int op = selecionar_menu("Digite a opção desejada: ", 1, 5, sc);
+            op = selecionar_menu("Digite a opção desejada: ", 1, 5, sc);
             executa_menu_principal(op, pController, cController, sc);
-            continua = continuar_menu("\nDeseja continuar? (S/N): ", 'S', 'N', sc);
+            if (op != 5) {
+                continua = continuar_menu("\nDeseja continuar? (S/N): ", 'S', 'N', sc);
+            } else {
+                continua = 'N';
+            }
 
         } while (continua == 'S');
 
