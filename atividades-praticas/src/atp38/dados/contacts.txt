@@ -1,0 +1,4 @@
+Escrevendo pelo bw
+Pulei linha
+Escrevi outra linha no mesmo write
+		Escrevi outra linha com tabulacao
