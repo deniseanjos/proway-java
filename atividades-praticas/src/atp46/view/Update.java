@@ -27,7 +27,7 @@ public class Update {
             //Query SQL
             Statement statement = conn.createStatement();
             //Insert com o salvamento local das keys
-            String query = "UPDATE tb_pessoa SET nome = 'Vanessão' WHERE id = 5";
+            String query = "UPDATE tb_produto SET categoria_id = 2";
             statement.execute(query);
             //Ver quantas linhas foram afetadas pela alteração
             int lines = statement.getUpdateCount();

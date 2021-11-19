@@ -27,14 +27,17 @@ public class Select {
             //Query SQL
             Statement statement = conn.createStatement();
             //Consulta
-            statement.execute("SELECT * FROM TB_PESSOA");
+            statement.execute("SELECT * FROM tb_produto");
             //Retorno da consulta
             ResultSet result = statement.getResultSet();
             //Impressao do retorno
             while(result.next()){
                 int id = result.getInt("id");
                 String nome = result.getString("nome");
-                System.out.printf("%d\t%s\n", id, nome);
+                String descricao = result.getString("descricao");
+                Double preco = result.getDouble("preco");
+                int categoria_id = result.getInt("categoria_id");
+                System.out.printf("%d\t%s\t\t%s\t\t%.2f\t%d\n", id, nome, descricao, preco, categoria_id);
             }
 
             conn.close();

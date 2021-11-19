@@ -27,7 +27,7 @@ public class Insert {
             //Query SQL
             Statement statement = conn.createStatement();
             //Insert com o salvamento local das keys
-            String query = "INSERT INTO tb_pessoa (nome) VALUES ('Deniso')";
+            String query = "INSERT INTO tb_produto (nome, descricao, preco, categoria_id) VALUES ('Controle', 'Acessorios', 70, 1)";
             statement.execute(query, statement.RETURN_GENERATED_KEYS);
             //Retorno da query
             ResultSet ids = statement.getGeneratedKeys();

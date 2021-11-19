@@ -18,7 +18,7 @@ public class Delete {
             //Query SQL
             Statement statement = conn.createStatement();
             //Insert com o salvamento local das keys
-            String query = "DELETE FROM tb_pessoa WHERE id > 5";
+            String query = "DELETE FROM tb_produto WHERE id > 5";
             statement.execute(query);
             //Ver quantas linhas foram afetadas pela alteração
             int lines = statement.getUpdateCount();
