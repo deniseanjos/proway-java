@@ -11,10 +11,9 @@ public class Select {
 
     public static void main(String[] args) {
         
-        try {
+        //Criando conexão com ConnectionFactory do Utils
+        try(Connection conn = new ConnectionFactory().getConnection()) {
             
-            //Criando conexão com ConnectionFactory do Utils
-            Connection conn = new ConnectionFactory().getConnection();
 
             //Query SQL
             PreparedStatement prepStatement = conn.prepareStatement("SELECT * FROM tb_categoria");

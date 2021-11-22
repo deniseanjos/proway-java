@@ -12,14 +12,12 @@ public class Insert {
 
     public static void main(String[] args) {
         
-        try {
+        //Criando conexão com ConnectionFactory do Utils
+        try(Connection conn = new ConnectionFactory().getConnection()) {
 
             //Variaveis (inicializadas, mas poderiam ser externas)
             String nome = "Nome categoria";
-            String descricao = "Teste categoria por SQL Injection";
-
-            //Criando conexão com ConnectionFactory do Utils
-            Connection conn = new ConnectionFactory().getConnection();
+            String descricao = "Teste categoria por SQL Injection";           
 
             //Query SQL
             PreparedStatement prepStatement = conn.prepareStatement("INSERT INTO tb_categoria (nome, descricao) VALUES (?,?)", Statement.RETURN_GENERATED_KEYS);
@@ -42,7 +40,6 @@ public class Insert {
                 System.out.printf("%d\t%s\t%s\n", id, nomeIds, descricaoIds);
             }
 
-            conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
             // System.out.println("Não foi possível conectar ao banco.");

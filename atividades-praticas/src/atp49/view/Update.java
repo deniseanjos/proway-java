@@ -10,14 +10,12 @@ public class Update {
 
     public static void main(String[] args) {
         
-        try {
+        //Criando conexão com ConnectionFactory do Utils
+        try(Connection conn = new ConnectionFactory().getConnection()) {
 
             //Criacao de variaveis
             String nome = "Teste CF";
-            int id = 10;
-
-            //Criando conexão com ConnectionFactory do Utils
-            Connection conn = new ConnectionFactory().getConnection();
+            int id = 10;           
             
             //Query SQL
             PreparedStatement prepStatement = conn.prepareStatement("UPDATE tb_categoria SET nome = ? where id = ?");
