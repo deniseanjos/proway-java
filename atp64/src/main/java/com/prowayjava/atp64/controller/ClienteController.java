@@ -11,9 +11,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.prowayjava.atp64.model.Cliente;
 import com.prowayjava.atp64.repository.ClienteRepository;
 
+
 @Controller
 public class ClienteController {
-
+	
 	private ClienteRepository repository;
 
 	public ClienteController(ClienteRepository respository) {
@@ -22,16 +23,16 @@ public class ClienteController {
 
 	@GetMapping("/cliente")
 	public String clientes(Model req) {
-		List<Cliente> lista = (List<Cliente>) repository.findAll();
+		List<Cliente> lista = (List<Cliente>)repository.findAll();
 		req.addAttribute("clientes", lista);
 		return "clientes";
 	}
 
-	@GetMapping("/cliente/form")
+	@GetMapping("/cliente/cadastrar")
 	public String formulario(Model req) {
 		Cliente model = new Cliente();
 		req.addAttribute("cliente", model);
-		return "clientes-form";
+		return "cliente-form";
 	}
 
 	@PostMapping("/cliente/salvar")
@@ -50,7 +51,7 @@ public class ClienteController {
 	public String editar(@PathVariable int id, Model req) {
 		Cliente model = repository.findById(id).get();
 		req.addAttribute("cliente", model);
-		return "clientes-form";
+		return "cliente-form";
 	}
 
 }

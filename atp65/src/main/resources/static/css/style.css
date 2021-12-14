@@ -1,9 +1,0 @@
-@charset "ISO-8859-1";
-
-body {
-	background: pink;
-}
-
-h1 {
-	transform: touppercase;
-}

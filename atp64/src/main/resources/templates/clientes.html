@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
+<meta charset="UTF-8">
+<title>Cadastro de Clientes</title>
 </head>
 <body>
-    <h1>Clientes</h1>
-    <h2>Lista de Clientes</h2>
-    
-    <a href="/cliente/form">Cadastrar novo</a>
-    <br />
-    <table>
+	<h1>Clientes</h1>
+	<h2>Lista de Clientes Cadastrados</h2>
+	
+	<table>
         <thead>
             <tr>
                 <th>Id</th>
@@ -28,12 +24,13 @@
                 <td th:text="${c.nome}"></td>
                 <td th:text="${c.email}"></td>
                 <td th:text="${c.telefone}"></td>
-                <td>
+                 <td>
                     <a th:href="@{'/cliente/editar/'+${c.id}}">Editar</a> |
                     <a th:href="@{'/cliente/deletar/'+${c.id}}">Deletar</a>
                 </td>
             </tr>
         </tbody>
     </table>
+	
 </body>
 </html>

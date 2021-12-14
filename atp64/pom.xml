@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.6.0</version>
+		<version>2.6.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.prowayjava</groupId>
@@ -13,7 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>atp64</name>
-	<description>Projeto Java com Spring Boot</description>
+	<description>ATP64 - Spring Boot - MVC</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
