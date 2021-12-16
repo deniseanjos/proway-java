@@ -1,0 +1,22 @@
+body {
+	background-color: #6b8894;
+}
+
+h1 {
+	text-align: center;
+	margin: 2%;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.botao-salvar {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-success {
+	color: red;
+}

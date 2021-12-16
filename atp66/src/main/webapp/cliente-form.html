@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head th:replace="~{base :: head(Cadastro-Clientes)}"></head>
+<body>
+	<h1>Cadastro de Clientes</h1>
+	<form action="/cliente/salvar" method="post">
+	<div class="row mb-3">
+		<input type="hidden" name="id" id="id" th:value="${cliente.id}">
+		</div>
+		<div class="row mb-3">
+			<label for="nome" class="col-sm-1 col-form-label col-form-label-sm">Nome</label>
+			<div class="col-sm-11">
+				<input class="form-control" type="text" name="nome" id="nome" th:value="${cliente.nome}">
+			</div>
+		</div>
+		<div class="row mb-3">
+			<label for="email" class="col-sm-1 col-form-label col-form-label-sm">Email</label>
+			<div class="col-sm-11">
+				<input class="form-control" type="text" name="email" id="email"
+					th:value="${cliente.email}">
+			</div>
+		</div>
+		<div class="row mb-3">
+			<label for="telefone" class="col-sm-1 col-form-label col-form-label-sm">Telefone</label>
+			<div class="col-sm-11">
+				<input class="form-control" type="text" name="telefone" id="telefone"
+					th:value="${cliente.telefone}">
+			</div>
+		</div>
+		<div>
+			<input type="submit" value="Salvar">
+		</div>
+	</form>
+	<br />
+	<a href="/cliente">Voltar para lista</a>
+	<br />
+</body>
+</html>
