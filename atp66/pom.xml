@@ -8,11 +8,11 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.prowayjava</groupId>
-	<artifactId>atp65</artifactId>
+	<artifactId>atp66</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>atp65</name>
-	<description>ATP65 - Spring Boot - MVC</description>
+	<name>atp66</name>
+	<description>ATP66 - Spring Boot - MVC</description>
 	<properties>
 		<java.version>16</java.version>
 	</properties>
