@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head th:replace="~{base :: head(Lista-Clientes)}"></head>
+<body>
+<header th:replace="~{base :: header}"></header>
+	<h1>Lista de Clientes Cadastrados</h1>
+	<div class="container">
+	<table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="c : ${clientes}">
+                <td th:text="${c.id}"></td>
+                <td th:text="${c.nome}"></td>
+                <td th:text="${c.email}"></td>
+                <td th:text="${c.telefone}"></td>
+                 <td>
+                    <a class="btn btn-warning" th:href="@{'/cliente/editar/'+${c.id}}">Editar</a> |
+                    <a class="btn btn-danger" th:href="@{'/cliente/deletar/'+${c.id}}">Deletar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+	</div>
+</body>
+</html>
